@@ -108,14 +108,9 @@
 
 
       } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        <style>
-        #unity-logo-title-footer,
-        #unity-build-title,
-        #unity-fullscreen-button {
-        display: none !important;
-        }
-        </style>
+        // Escalado para PC manteniendo la proporción 9:16
+        canvas.style.width = "min(100vw, calc(100vh * 9 / 16))";
+        canvas.style.height = "min(calc(100vw * 16 / 9), 100vh)";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
