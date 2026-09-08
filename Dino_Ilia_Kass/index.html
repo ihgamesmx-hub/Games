@@ -6,6 +6,11 @@
     <title>Unity Web Player | Dino_Ilia</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+  #unity-footer {
+    display: none !important;
+  }
+</style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -104,8 +109,13 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "540px";
-        canvas.style.height = "960px";
+        <style>
+        #unity-logo-title-footer,
+        #unity-build-title,
+        #unity-fullscreen-button {
+        display: none !important;
+        }
+        </style>
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
