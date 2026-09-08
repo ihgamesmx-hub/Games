@@ -6,11 +6,6 @@
     <title>Unity Web Player | Dino_Ilia</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-    #unity-footer {
-    display: none !important;
-    }
-    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -57,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/73a768fe4be84d55b8c4d15599d2f4a4.loader.js";
+      var loaderUrl = buildUrl + "/c64b4f86c1c8c5e983cd529381a0d15d.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/cda99f2beee864900f868a4543e80bf5.data",
+        dataUrl: buildUrl + "/4ab8827d652964c6a3b4966fe2a76d6a.data",
         frameworkUrl: buildUrl + "/d0d4f30b7818f2a42f5e84ae66ed706b.framework.js",
-        codeUrl: buildUrl + "/25bfd8c5240ef885ad5f22d238859393.wasm",
+        codeUrl: buildUrl + "/ff00720d80dd0c7930e50bcf59f6f9d9.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "IhGames",
         productName: "Dino_Ilia",
@@ -109,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "min(100vw, calc((100vh - 38px) * 9 / 16))";
-        canvas.style.height = "min(calc(100vw * 16 / 9), calc(100vh - 38px))";
+        canvas.style.width = "540px";
+        canvas.style.height = "960px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
